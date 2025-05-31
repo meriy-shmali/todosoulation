@@ -22,10 +22,15 @@
                     <form method="post" asp-action="CompleteTask" style="display:inline;">
                         <input type="hidden" name="id" value="@task.Id" />
                         <button type="submit">اكتملت</button>
-                    </form>
+                    </form> 
+                    //زر حذف المهمة 
+                    <form method="post" asp-action="DeleteTask" style="display:inline; margin-right: 5px;">
+    <input type="hidden" name="id" value="@task.Id" />
+    <button type="submit">حذف</button>
+</form>
                 }
 
-                <!-- TODO: إضافة زر حذف المهمة -->
+            
             </li>
         }
     </ul>
